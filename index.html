@@ -3,55 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downloadable CVs</title>
+    <title>Free CVs Online</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f4f4f4;
             color: #333;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
         header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #bbb 1px solid;
-        }
-        header h1 {
             text-align: center;
-            margin: 0;
+            margin-bottom: 40px;
         }
         .content {
-            padding: 20px;
-            background: #fff;
-            margin: 20px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+        .content h2 {
+            margin-bottom: 20px;
         }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
         .grid-item {
-            background: #f9f9f9;
-            padding: 20px;
+            background: #fff;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
             text-align: center;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
         }
         .grid-item a {
             text-decoration: none;
             color: #007bff;
-            display: block;
-            margin-top: 10px;
+            font-weight: bold;
         }
         .grid-item a:hover {
             text-decoration: underline;
@@ -60,24 +52,36 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Downloadable CVs</h1>
-        </div>
+        <h1>Free CVs Online</h1>
     </header>
-    <div class="container">
-        <div class="content">
-            <h2>Available CVs</h2>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="cv1-thumbnail.jpg" alt="CV 1 Thumbnail" width="100%">
-                    <a href="cv1.docx" download>Download CV in Word Format</a>
-                </div>
-                <div class="grid-item">
-                    <img src="cv2-thumbnail.jpg" alt="CV 2 Thumbnail" width="100%">
-                    <a href="cv2.docx" download>Download CV in Word Format</a>
-                </div>
-                <!-- Add more grid items as needed -->
+
+    <div class="content">
+        <h2>About</h2>
+        <p>Welcome to my webpage of FREE downloadable CV templates!</p>
+        <p>Whether you’re a school leaver, a sales executive, or re-entering the workforce, I have a CV template just for you!</p>
+        <p>I noticed that many CV templates online are locked behind paywalls—where money can be tight during your time as a job seeker. My goal is to help you stand out from the sea of applicants with tailored, easily editable CVs.</p>
+        <p>These FREE templates come in .DOC format, making them simple to customize using Google Docs, Microsoft Word, Pages, and more. Each template includes sections for your job search, skills, education, and personal details.</p>
+        <p>In the future, I will design more CV templates and cover letters, and other resources to support you in your job search.</p>
+        <p>Questions or feedback? Feel free to email me at <a href="mailto:Philz.totton@gmail.com">Philz.totton@gmail.com</a>.</p>
+    </div>
+
+    <div class="content">
+        <h2>CV Templates</h2>
+        <div class="grid-container">
+            <!-- Example grid item -->
+            <div class="grid-item">
+                <img src="path/to/cv1-thumbnail.jpg" alt="CV 1 Thumbnail">
+                <a href="path/to/cv1.docx" download>Download CV 1</a>
             </div>
+            <div class="grid-item">
+                <img src="path/to/cv2-thumbnail.jpg" alt="CV 2 Thumbnail">
+                <a href="path/to/cv2.docx" download>Download CV 2</a>
+            </div>
+            <div class="grid-item">
+                <img src="path/to/cv3-thumbnail.jpg" alt="CV 3 Thumbnail">
+                <a href="path/to/cv3.docx" download>Download CV 3</a>
+            </div>
+            <!-- Add more grid items up to 12 -->
         </div>
     </div>
 </body>
