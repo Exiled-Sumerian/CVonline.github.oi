@@ -35,18 +35,25 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        .file-list {
-            list-style-type: none;
-            padding: 0;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
         }
-        .file-list li {
-            margin: 10px 0;
+        .grid-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
         }
-        .file-list a {
+        .grid-item a {
             text-decoration: none;
             color: #007bff;
+            display: block;
+            margin-top: 10px;
         }
-        .file-list a:hover {
+        .grid-item a:hover {
             text-decoration: underline;
         }
     </style>
@@ -60,9 +67,17 @@
     <div class="container">
         <div class="content">
             <h2>Available CVs</h2>
-            <ul class="file-list">
-                <li><a href="cv.doc.docx" download>Download CV in Word Format</a></li>
-            </ul>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="cv1-thumbnail.jpg" alt="CV 1 Thumbnail" width="100%">
+                    <a href="cv1.docx" download>Download CV in Word Format</a>
+                </div>
+                <div class="grid-item">
+                    <img src="cv2-thumbnail.jpg" alt="CV 2 Thumbnail" width="100%">
+                    <a href="cv2.docx" download>Download CV in Word Format</a>
+                </div>
+                <!-- Add more grid items as needed -->
+            </div>
         </div>
     </div>
 </body>
